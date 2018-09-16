@@ -1,25 +1,25 @@
+
 <!-- Liste des exposés -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<script>
+    <meta charset="utf-8">
+    <title>Liste des exposés disponibles en ICN</title>
+    <script>
     function dateCorrecte(jour) {
-    var i, mesitems;
-
-    mesitems = document.getElementsByClassName(jour);
-    for (i = 0; i < mesitems.length; i++) {
-        mesitems[i].style.textDecoration = "line-through";
-    }
+        var i, mesitems;
+        mesitems = document.getElementsByClassName(jour);
+        for (i = 0; i < mesitems.length; i++) {
+            mesitems[i].style.textDecoration = "line-through";
+        }
     }
     
     function nettoyage(jour) {
-    var i, mesitems;
-
-    mesitems = document.getElementsByClassName(jour);
-    for (i = 0; i < mesitems.length; i++) {
-        mesitems[i].style.textDecoration = "none";
-    }
+        var i, mesitems;
+        mesitems = document.getElementsByClassName(jour);
+        for (i = 0; i < mesitems.length; i++) {
+            mesitems[i].style.textDecoration = "none";
+        }
     }
 </script>
 <style>
@@ -36,7 +36,6 @@
 }
 .tab button:hover {
     background-color: #ddd;
-
 </style>
 </head>
 <body>
@@ -44,11 +43,11 @@
  <div class="tab">
   <button class="tablinks" onmouseover="dateCorrecte('mardi')" onmouseout="nettoyage('mardi')"><h2>Mardi</h2></button>
   <button class="tablinks" onmouseover="dateCorrecte('jeudi')" onmouseout="nettoyage('jeudi')"><h2>Jeudi</h2></button>
-
 </div>
+
 <ul>
-<li><div class="mardi jeudi">Intelligence artificielle</div</li>
-<li><div class="mardi">Mots de passe</div></li>
+    <li><div class="mardi jeudi">Intelligence artificielle</div</li>
+    <li><div class="mardi">Mots de passe</div></li>
 </ul>
 </body>
 </html>
